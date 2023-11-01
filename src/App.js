@@ -1,23 +1,57 @@
-import logo from './logo.svg';
+import Card from "./component/Card"
 import './App.css';
 
 function App() {
+  const card1 = {
+    name: "red",
+    color: "red",
+    code: "#596322"
+  };
+  const card2 = {
+    name: "red",
+    color: "green",
+    code: "#092222"
+  };
+  const card3 = {
+    name: "red",
+    color: "yellow",
+    code: "#12566"
+  };
+  const card4 = {
+    name: "red",
+    color: "orange",
+    code: "#592222"
+  };
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Props</h1>
+      <div>
+      <Card data={card1} />
+      <Card data={card2} />
+      <Card data={card3} />
+      <Card data={card4} />
+      <Card data={card1} />
+      <Card data={card2} />
+      <Card data={card3} />
+      <Card data={card4} />
+      <Card data={card1} />
+      <Card data={card2} />
+      <Card data={card3} />
+      <Card data={card4} />
+      <Card data={card1} />
+      <Card data={card2} />
+      <Card data={card3} />
+      <Card data={card4} />
+      <Card data={card1} />
+      <Card data={card2} />
+      <Card data={card3} />
+      <Card data={card4} />
+      <Card data={card1} />
+      <Card data={card2} />
+      <Card data={card3} />
+      <Card data={card4} />
+      </div>
     </div>
   );
 }
